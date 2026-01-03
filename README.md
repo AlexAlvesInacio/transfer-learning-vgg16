@@ -86,3 +86,25 @@ Se quiser, posso gerar a imagem pra você agora mesmo. Só rodamos o script.
 - Potencial real >85% com Data Augmentation
 
 📌 Conclusão: **Transfer Learning foi muito superior.**
+
+---
+
+## 📊 Avaliação do Modelo
+
+O desempenho do modelo de classificação foi avaliado utilizando métricas amplamente empregadas em problemas de classificação binária, incluindo:
+
+- **Acurácia**
+- **Precisão**
+- **Sensibilidade (Recall)**
+- **F1-score**
+- **Curva ROC e AUC**
+
+Os resultados indicaram **alta sensibilidade (Recall = 1.0)**, demonstrando que o modelo conseguiu identificar corretamente todos os exemplos da classe positiva. Entretanto, a **AUC ROC inferior a 0.5** evidencia uma **baixa capacidade de separação entre as classes**, sugerindo que o modelo tende a classificar excessivamente exemplos como positivos.
+
+Esse comportamento pode estar relacionado a fatores como:
+- Tamanho reduzido do conjunto de teste
+- Possível desbalanceamento das classes
+- Ausência de fine-tuning profundo no modelo VGG16 pré-treinado
+
+Mesmo assim, a aplicação das métricas permitiu uma análise crítica do desempenho, evidenciando a importância de avaliar modelos além da acurácia simples.
+
